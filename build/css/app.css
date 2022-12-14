@@ -568,4 +568,75 @@ h3 {
   -webkit-transform: rotate(-4deg) scale(1.2);
           transform: rotate(-4deg) scale(1.2);
 }
+
+.testimoniales {
+  padding: 5rem 0;
+}
+.testimoniales__heading {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .testimoniales__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.testimonial {
+  background-color: #455a64;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  color: #FFFFFF;
+}
+.testimonial:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  ma .testimonial:nth-child(1) {
+    grid-column: 1/4;
+  }
+  .testimonial:nth-child(3) {
+    grid-column: 5/6;
+    grid-row: 1/3;
+  }
+  .testimonial:nth-child(4) {
+    grid-column: 1/3;
+  }
+  .testimonial:nth-child(5) {
+    grid-column: 3/5;
+  }
+}
+.testimonial__header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.testimonial__imagen {
+  flex-basis: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonial__autor {
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+.testimonial__texto {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 2rem 0 0 0;
+  padding-left: 3rem;
+  position: relative;
+}
+.testimonial__texto::before {
+  content: ' " ';
+  font-size: 10rem;
+  position: absolute;
+  left: 0;
+  top: -4rem;
+  opacity: 0.2;
+  font-family: "Trebuchet MS", sans-serif;
+}
 /*# sourceMappingURL=app.css.map */
