@@ -594,7 +594,10 @@ h3 {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  ma .testimonial:nth-child(1) {
+  .testimonial {
+    margin-bottom: 0;
+  }
+  .testimonial:nth-child(1) {
     grid-column: 1/4;
   }
   .testimonial:nth-child(3) {
